@@ -4,6 +4,4 @@ const app = express()
 app.get('/', (req, res, next) => {
     res.send('Hello plurimedia!')
 })
-app.listen(8080, () => {
-    console.log('app started')
-})
+app.listen(process.env.PORT || 3000)
